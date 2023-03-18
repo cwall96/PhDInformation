@@ -9,7 +9,7 @@ kernelspec:
   name: python3
 ---
 
-# NENCARC Example Project
+# Conor Wall PhD Information 
 
 This is an example project designed and written by Conor Wall.
 
