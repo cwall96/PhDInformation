@@ -1,11 +1,11 @@
 #######################################################################################
 # Book settings
-title                         : Template Project For NENCARC
+title                         : Conor Wall
 author                        : Conor Wall
-logo                          : 'logo.png'
-email                         : conor3.wall@northumbria.ac.uk
+logo                          : 'logo2.png'
+email                         : conor.p.a.wall@northumbria.ac.uk
 description: >-
-  This book is a template for NENCARC, designed and written by **Conor Wall**.
+  PhD Information Page
 
 
 execute:
@@ -13,7 +13,7 @@ execute:
 
 
 html:
-  favicon                     : 'favicon.png'
+  favicon                     : 'logo2.png'
   home_page_in_navbar         : false
   use_edit_page_button        : true
   use_repository_button       : true
