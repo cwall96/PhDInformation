@@ -3,12 +3,16 @@
 
 # # Conor Wall - Contact Information 
 # 
-# Google Scholar [Link](https://scholar.google.com/citations?user=4zQAbnsAAAAJ&hl=en&oi=ao)
-# Twitter [Link](https://www.twitter.com/ConorWall96)
+# Email: conor.p.a.wall@northumbria.ac.uk \
+# Office: ELB111 \
+# Supervisors: Dr Alan Godfrey, Professor Richard Walker, Professor Peter McMeekin \
+# Digi Health Research Group: [Link](https://digihealthgroup.org/#) \
+# Google Scholar: [Link](https://scholar.google.com/citations?user=4zQAbnsAAAAJ&hl=en&oi=ao) \
+# Twitter: [Link](https://www.twitter.com/ConorWall96) \
 # 
-# # Poster Information and References 
+# # Poster Information
 # 
-# [Link](www.google.com) to download poster. 
+# Click on this [link](www.google.com) to download poster. 
 # 
 # ## References 
 # 
