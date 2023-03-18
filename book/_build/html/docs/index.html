@@ -1,0 +1,1240 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>NENCARC Example Project &#8212; Template Project For NENCARC</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chapter 1" href="chapter1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Template Project For NENCARC</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Example Book 1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter1.html">
+   Chapter 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter2.html">
+   Chapter 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter3.html">
+   Chapter 3
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Example Book 2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter4.html">
+   Chapter 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter5.html">
+   Chapter 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter6.html">
+   Chapter 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Example Book 3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter7.html">
+   Chapter 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter8.html">
+   Chapter 8
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter9.html">
+   Chapter 9
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/nencarc-digital/template/master?urlpath=tree/book/docs/index.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/nencarc-digital/template/"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/nencarc-digital/template/edit/master/book/docs/index.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/index.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/docs/index.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#packages-needed">
+     Packages Needed
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#windows-installation">
+       Windows Installation
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#anaconda-installation">
+         Anaconda Installation
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#packages-installation">
+         Packages Installation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mac-os-installation">
+       Mac OS Installation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-new-page">
+     Setting Up New Page
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#downloading-template">
+       Downloading Template
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creating-new-repository">
+       Creating New Repository
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#configuring-repository">
+       Configuring Repository
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setting-up-github-credentials">
+       Setting Up Github Credentials
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generating-personal-access-token">
+       Generating Personal Access Token
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setting-up-new-page-with-template">
+       Setting Up New Page With Template
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pushing-changes-to-github-repository">
+       Pushing Changes To Github Repository
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pushing-to-live-github-page">
+       Pushing To Live Github Page
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editing-page-content">
+     Editing Page Content
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#opening-and-explaining-folder-structure">
+       Opening And Explaining Folder Structure
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#editing-pages">
+       Editing Pages
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#general-text">
+         General Text
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#headings">
+         Headings
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hyperlinks">
+         Hyperlinks
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#figures">
+         Figures
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#code-cell">
+         Code Cell
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#editing-navigation-bar">
+         Editing Navigation Bar
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-troubleshooting">
+     General Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>NENCARC Example Project</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#packages-needed">
+     Packages Needed
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#windows-installation">
+       Windows Installation
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#anaconda-installation">
+         Anaconda Installation
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#packages-installation">
+         Packages Installation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mac-os-installation">
+       Mac OS Installation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-new-page">
+     Setting Up New Page
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#downloading-template">
+       Downloading Template
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creating-new-repository">
+       Creating New Repository
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#configuring-repository">
+       Configuring Repository
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setting-up-github-credentials">
+       Setting Up Github Credentials
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generating-personal-access-token">
+       Generating Personal Access Token
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setting-up-new-page-with-template">
+       Setting Up New Page With Template
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pushing-changes-to-github-repository">
+       Pushing Changes To Github Repository
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pushing-to-live-github-page">
+       Pushing To Live Github Page
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editing-page-content">
+     Editing Page Content
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#opening-and-explaining-folder-structure">
+       Opening And Explaining Folder Structure
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#editing-pages">
+       Editing Pages
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#general-text">
+         General Text
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#headings">
+         Headings
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hyperlinks">
+         Hyperlinks
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#figures">
+         Figures
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#code-cell">
+         Code Cell
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#editing-navigation-bar">
+         Editing Navigation Bar
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-troubleshooting">
+     General Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="nencarc-example-project">
+<h1>NENCARC Example Project<a class="headerlink" href="#nencarc-example-project" title="Permalink to this headline">#</a></h1>
+<p>This is an example project designed and written by Conor Wall.</p>
+<p>This will include additional information when required. The Github repo can be found <a class="reference external" href="https://github.com/nencarc-digital/template">here</a>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/banner.jpeg"><img alt="../_images/banner.jpeg" src="../_images/banner.jpeg" style="width: 675.0px; height: 225.0px;" /></a>
+</figure>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<p>This section will cover how to create your own book using this template.</p>
+<p>You will need a GitHub account setup for this process (if not using the <a class="reference external" href="mailto:nencarc&#46;digital&#37;&#52;&#48;gmail&#46;com">nencarc<span>&#46;</span>digital<span>&#64;</span>gmail<span>&#46;</span>com</a> account) which can be done by clicking on this <a class="reference external" href="https://github.com/join">link</a>.</p>
+<p>You will learn how to</p>
+<ol class="simple">
+<li><p>install the relevant packages required for github</p></li>
+<li><p>setup a new github repository and github page</p></li>
+<li><p>add/edit/delete content from the book</p></li>
+<li><p>push the content to the github repository and live github page</p></li>
+</ol>
+<section id="packages-needed">
+<h3>Packages Needed<a class="headerlink" href="#packages-needed" title="Permalink to this headline">#</a></h3>
+<section id="windows-installation">
+<h4>Windows Installation<a class="headerlink" href="#windows-installation" title="Permalink to this headline">#</a></h4>
+<section id="anaconda-installation">
+<h5>Anaconda Installation<a class="headerlink" href="#anaconda-installation" title="Permalink to this headline">#</a></h5>
+<p>Although the use of Git is possible without any python installation, the use of a python environment manager ensures the process is a lot simpler and more convenient.</p>
+<p>Therefore, on a Windows machine the installation of Anaconda is required. The link to the download page can be found <a class="reference external" href="https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86_64.exe">here</a>.</p>
+<p>During the installation process, this option will appear. Choose the ‘Register’ option.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/wscreenshot3.png"><img alt="../_images/wscreenshot3.png" src="../_images/wscreenshot3.png" style="width: 275.0px; height: 214.50000000000003px;" /></a>
+</figure>
+<p>Once the installation is finished, Anaconda Prompt is the command line tool you will be using for the development process.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/wscreenshotanaconda.png"><img alt="../_images/wscreenshotanaconda.png" src="../_images/wscreenshotanaconda.png" style="width: 245.85000000000002px; height: 349.25px;" /></a>
+</figure>
+</section>
+<section id="packages-installation">
+<h5>Packages Installation<a class="headerlink" href="#packages-installation" title="Permalink to this headline">#</a></h5>
+<p>Three packages require installation in Anaconda for Windows, Git, GHP-Import and Jupyter-Books.These can be installed using the code below.</p>
+<p>Git Installation</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">anaconda</span> <span class="n">git</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>GHP-Import Installation</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jupyter-Books Installation</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>An error may occur regarding an outdated ‘nodejs’ installation. This can be sorted through the command below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">nodejs</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="mac-os-installation">
+<h4>Mac OS Installation<a class="headerlink" href="#mac-os-installation" title="Permalink to this headline">#</a></h4>
+<p>For Mac OS, I would recommend the use of Homebrew for the installation, which can be installed via entering the following code into terminal.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Once Homebrew is installed, git can then be installed via the following command.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">git</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Two additional packages require installation, GHP-Import and JupyterLab.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterlab</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="setting-up-new-page">
+<h3>Setting Up New Page<a class="headerlink" href="#setting-up-new-page" title="Permalink to this headline">#</a></h3>
+<section id="downloading-template">
+<h4>Downloading Template<a class="headerlink" href="#downloading-template" title="Permalink to this headline">#</a></h4>
+<p>Download the template zip file from GitHub using this <a class="reference external" href="https://drive.google.com/file/d/1hm8K1p0PlVSX8Ib2Y6N_v5y-8NpUfR8Z/view?usp=sharing">link</a>. Unzip the file and then export the folder to a desired location and save the folder name.</p>
+</section>
+<section id="creating-new-repository">
+<h4>Creating New Repository<a class="headerlink" href="#creating-new-repository" title="Permalink to this headline">#</a></h4>
+<p>Sign into GitHub using the user credentials. Create a new repository using the following screenshots as a guide.</p>
+<p>Click on the button in the red circle.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot1.png"><img alt="../_images/screenshot1.png" src="../_images/screenshot1.png" style="width: 638.0px; height: 253.0px;" /></a>
+</figure>
+<p>Enter a repository name and click on the ‘Add a README File’ checkbox.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot2.png"><img alt="../_images/screenshot2.png" src="../_images/screenshot2.png" style="width: 640.0px; height: 309.5px;" /></a>
+</figure>
+<p>Click on the ‘Create Repository’ Button.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot3.png"><img alt="../_images/screenshot3.png" src="../_images/screenshot3.png" style="width: 640.0px; height: 309.0px;" /></a>
+</figure>
+</section>
+<section id="configuring-repository">
+<h4>Configuring Repository<a class="headerlink" href="#configuring-repository" title="Permalink to this headline">#</a></h4>
+<p>GitHub Pages is required to be enabled within each repository. To achieve this, use the following screenshots as a guide.</p>
+<p>First click onto the repository.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot4.png"><img alt="../_images/screenshot4.png" src="../_images/screenshot4.png" style="width: 639.0px; height: 184.0px;" /></a>
+</figure>
+<p>Click on the repository settings.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot5.png"><img alt="../_images/screenshot5.png" src="../_images/screenshot5.png" style="width: 468.0px; height: 235.5px;" /></a>
+</figure>
+<p>Click on ‘Pages’.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot6.png"><img alt="../_images/screenshot6.png" src="../_images/screenshot6.png" style="width: 470.5px; height: 267.5px;" /></a>
+</figure>
+<p>To enable GitHub Pages, click on ‘None’.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot7.png"><img alt="../_images/screenshot7.png" src="../_images/screenshot7.png" style="width: 288.0px; height: 63.0px;" /></a>
+</figure>
+<p>Then proceed to click on ‘Main’. This source will change to ‘gh-pages’ at a later date but for now but ‘Main’ is the only option.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot8.png"><img alt="../_images/screenshot8.png" src="../_images/screenshot8.png" style="width: 352.5px; height: 144.0px;" /></a>
+</figure>
+<p>Following this step, GitHub Pages is enabled.</p>
+</section>
+<section id="setting-up-github-credentials">
+<h4>Setting Up Github Credentials<a class="headerlink" href="#setting-up-github-credentials" title="Permalink to this headline">#</a></h4>
+<p>To perform any Git related actions on terminal, it is required that your Github credentials are verified first.</p>
+<p>Enter your Github username first, which in our case as an example is the ‘nencarc-digital’.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="n">nencarc</span><span class="o">-</span><span class="n">digital</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then enter your Github email, which  in our case will be ‘nencarc.digital&#64;gmail.com’.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">nencarc</span><span class="o">.</span><span class="n">digital</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot12.png"><img alt="../_images/screenshot12.png" src="../_images/screenshot12.png" style="width: 584.1px; height: 333.90000000000003px;" /></a>
+</figure>
+<p>At this stage it may ask for your Github password, which will be sent privately. If this does not work, a Github personal access token may be required. It also may ask for your password at a later stage, for example, when pushing to the repository. Here is an example of what that may look like.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot21.png"><img alt="../_images/screenshot21.png" src="../_images/screenshot21.png" style="width: 438.3px; height: 27.0px;" /></a>
+</figure>
+<p>On Windows, this option may appear. Please choose the ‘manager-core’ option. It may ask you to either ‘sign-in’ or enter the token which can be generated using the instructions below. Chose the option most convenient to you.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/wscreenshot10.png"><img alt="../_images/wscreenshot10.png" src="../_images/wscreenshot10.png" style="width: 173.25px; height: 135.0px;" /></a>
+</figure>
+</section>
+<section id="generating-personal-access-token">
+<h4>Generating Personal Access Token<a class="headerlink" href="#generating-personal-access-token" title="Permalink to this headline">#</a></h4>
+<p>Click on the user icon in the top right and then click on settings.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot14.png"><img alt="../_images/screenshot14.png" src="../_images/screenshot14.png" style="width: 117.0px; height: 265.5px;" /></a>
+</figure>
+<p>Scroll down to the bottom of the page and click ‘Developer Options’ on the left-hand side.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot15.png"><img alt="../_images/screenshot15.png" src="../_images/screenshot15.png" style="width: 144.5px; height: 134.5px;" /></a>
+</figure>
+<p>Click on ‘Personal access tokens’.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot16.png"><img alt="../_images/screenshot16.png" src="../_images/screenshot16.png" style="width: 154.0px; height: 69.5px;" /></a>
+</figure>
+<p>Click ‘Generate new token’</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot17.png"><img alt="../_images/screenshot17.png" src="../_images/screenshot17.png" style="width: 406.5px; height: 153.5px;" /></a>
+</figure>
+<p>Enter a token note.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot18.png"><img alt="../_images/screenshot18.png" src="../_images/screenshot18.png" style="width: 399.5px; height: 101.0px;" /></a>
+</figure>
+<p>Check every box and click on the ‘Generate token’ button.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot19.png"><img alt="../_images/screenshot19.png" src="../_images/screenshot19.png" style="width: 396.5px; height: 238.5px;" /></a>
+</figure>
+<p>A new token should be generated in the red circle. For the sake of security, the token created in this example is covered by a red rectangle. Paste this new password in the terminal if prompted by an error previously.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot20.png"><img alt="../_images/screenshot20.png" src="../_images/screenshot20.png" style="width: 398.5px; height: 117.0px;" /></a>
+</figure>
+</section>
+<section id="setting-up-new-page-with-template">
+<h4>Setting Up New Page With Template<a class="headerlink" href="#setting-up-new-page-with-template" title="Permalink to this headline">#</a></h4>
+<p>To upload the template to the new GitHub Page, you first need to clone the new repository. This should be done using the terminal/Anaconda Prompt depending if you are on Mac OS or Windows.</p>
+<p>First, you need the corrent link to clone the repository. On the repository main page, click on the ‘Code’ button.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot9.png"><img alt="../_images/screenshot9.png" src="../_images/screenshot9.png" style="width: 623.0px; height: 272.5px;" /></a>
+</figure>
+<p>Then click on ‘HTTPS’ and then copy the link via the button on the right circled.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot10.png"><img alt="../_images/screenshot10.png" src="../_images/screenshot10.png" style="width: 351.0px; height: 306.0px;" /></a>
+</figure>
+<p>Type ‘git clone’ and paste the link copied above into the terminal. Your code should look something like this (the repo name being the name you used earlier and not ‘testrepo’).</p>
+<p>If on Windows, ensure you do this on the C: drive. The C: drive can be accessed by entering ‘C:’ into a windows finder.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/windowscreenshot11.png"><img alt="../_images/windowscreenshot11.png" src="../_images/windowscreenshot11.png" style="width: 508.05px; height: 286.65000000000003px;" /></a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot9.png"><img alt="../_images/screenshot9.png" src="../_images/screenshot9.png" style="width: 623.0px; height: 272.5px;" /></a>
+</figure>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nencarc</span><span class="o">-</span><span class="n">digital</span><span class="o">/</span><span class="n">reponame</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot11.png"><img alt="../_images/screenshot11.png" src="../_images/screenshot11.png" style="width: 605.7px; height: 126.0px;" /></a>
+</figure>
+<p>You should now have a folder in your directory named the same as the repository name. Type ‘ls’ or ‘dir’ (depending if you’re on MAC OS or Windows) to see new directory.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot23.png"><img alt="../_images/screenshot23.png" src="../_images/screenshot23.png" style="width: 474.59999999999997px; height: 338.79999999999995px;" /></a>
+</figure>
+<p>Replace the contents of that folder with the contents in the ‘template’ zip file that was downloaded earlier in the tutorial.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot24.png"><img alt="../_images/screenshot24.png" src="../_images/screenshot24.png" style="width: 637.5px; height: 349.5px;" /></a>
+</figure>
+<p>Change your directory in the terminal to the new repository folder using the ‘cd’ command.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">reponame</span>
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot25.png"><img alt="../_images/screenshot25.png" src="../_images/screenshot25.png" style="width: 463.4px; height: 22.4px;" /></a>
+</figure>
+<p>Type ‘ls’ or ‘dir’ again and you should see the contents you’ve just copied over from the template folder.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot26.png"><img alt="../_images/screenshot26.png" src="../_images/screenshot26.png" style="width: 373.09999999999997px; height: 23.799999999999997px;" /></a>
+</figure>
+</section>
+<section id="pushing-changes-to-github-repository">
+<h4>Pushing Changes To Github Repository<a class="headerlink" href="#pushing-changes-to-github-repository" title="Permalink to this headline">#</a></h4>
+<p>To upload the updated folder to the GitHub repository, several commands are needed.</p>
+<p>The first of which is the ‘add’ command. This command adds all new and changed files to the staging area.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">--</span><span class="nb">all</span>
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot27.png"><img alt="../_images/screenshot27.png" src="../_images/screenshot27.png" style="width: 439.59999999999997px; height: 47.599999999999994px;" /></a>
+</figure>
+<p>The next command is the ‘commit’ command. This command commits the changes from the staging area, with a message to detail what the changes are generally speaking.</p>
+<p>For this example, we use ‘initial commit’ (use double quotes on windows) as this is this initial commit to the new respository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;initial commit&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot28.png"><img alt="../_images/screenshot28.png" src="../_images/screenshot28.png" style="width: 437.5px; height: 297.5px;" /></a>
+</figure>
+<p>If there is an SSL related error when entering this command, paste the following command into the terminal.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">http</span><span class="o">.</span><span class="n">sslVerify</span> <span class="n">false</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The final command is the ‘push’ command. This command pushes the changes to the GitHub repository to the ‘main’ branch.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot29.png"><img alt="../_images/screenshot29.png" src="../_images/screenshot29.png" style="width: 317.09999999999997px; height: 110.6px;" /></a>
+</figure>
+<p>This may come up with an error on Windows, which may require the use of the command below at this stage.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">f</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The changes should now be pushed to the Github repository.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot30.png"><img alt="../_images/screenshot30.png" src="../_images/screenshot30.png" style="width: 646.0999999999999px; height: 325.5px;" /></a>
+</figure>
+</section>
+<section id="pushing-to-live-github-page">
+<h4>Pushing To Live Github Page<a class="headerlink" href="#pushing-to-live-github-page" title="Permalink to this headline">#</a></h4>
+<p>To push to the live Github page, the book needs to be ‘built’ first. This is done using the command below which utilises the ‘jupyterlabs’ packages installed earlier.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jb</span> <span class="n">build</span> <span class="n">book</span><span class="o">/</span>  
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot31.png"><img alt="../_images/screenshot31.png" src="../_images/screenshot31.png" style="width: 432.59999999999997px; height: 298.2px;" /></a>
+</figure>
+<p>The built book is now visable locally using URL shown, which will be different to the URL for your repository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">file</span><span class="p">:</span><span class="o">///</span><span class="n">Users</span><span class="o">/</span><span class="n">conorwall</span><span class="o">/</span><span class="n">reponame</span><span class="o">/</span><span class="n">book</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot32.png"><img alt="../_images/screenshot32.png" src="../_images/screenshot32.png" style="width: 437.5px; height: 293.29999999999995px;" /></a>
+</figure>
+<p>To push the locally built book to the live Github page, enter the following command.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">f</span> <span class="n">book</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span><span class="n">html</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot33.png"><img alt="../_images/screenshot33.png" src="../_images/screenshot33.png" style="width: 376.59999999999997px; height: 155.39999999999998px;" /></a>
+</figure>
+<p>This process should take a few minutes to complete but in the Pages settings page, you should see that the website is now live at the specified URL.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot34.png"><img alt="../_images/screenshot34.png" src="../_images/screenshot34.png" style="width: 550.9px; height: 125.99999999999999px;" /></a>
+</figure>
+<p>If the source has not changed automatically, please change it to ‘gh-pages’ in the Page settings page like below.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot36.png"><img alt="../_images/screenshot36.png" src="../_images/screenshot36.png" style="width: 574.6999999999999px; height: 289.09999999999997px;" /></a>
+</figure>
+<p>Here is a screenshot of your new Github Page live!</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot35.png"><img alt="../_images/screenshot35.png" src="../_images/screenshot35.png" style="width: 639.5px; height: 311.5px;" /></a>
+</figure>
+</section>
+</section>
+<section id="editing-page-content">
+<h3>Editing Page Content<a class="headerlink" href="#editing-page-content" title="Permalink to this headline">#</a></h3>
+<p>Prior to being able to edit any page content, the installation of a source-code editor is required. There are a number of available options, with my personal preference being Visual Studio code which can be found at this <a class="reference external" href="https://code.visualstudio.com/download">link</a>.</p>
+<p>Other options include <a class="reference external" href="https://notepad-plus-plus.org/downloads/">Notepad++</a> and <a class="reference external" href="https://www.sublimetext.com/3">Sumblime</a>.</p>
+<p>For the sake of convenience, the tutorial will utilise the editor, Visual Studio Code.</p>
+<section id="opening-and-explaining-folder-structure">
+<h4>Opening And Explaining Folder Structure<a class="headerlink" href="#opening-and-explaining-folder-structure" title="Permalink to this headline">#</a></h4>
+<p>The first step is to open the repository folder in your editor of choice. This example is in Visual Studio Code.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot37.png"><img alt="../_images/screenshot37.png" src="../_images/screenshot37.png" style="width: 715.4px; height: 490.7px;" /></a>
+</figure>
+<p>Select the folder of choice.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot38.png"><img alt="../_images/screenshot38.png" src="../_images/screenshot38.png" style="width: 562.0999999999999px; height: 318.5px;" /></a>
+</figure>
+<p>Below is a general guide of what the important aspects of the folder structure are.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Slide1.jpg"><img alt="../_images/Slide1.jpg" src="../_images/Slide1.jpg" style="width: 640.0px; height: 360.0px;" /></a>
+</figure>
+</section>
+<section id="editing-pages">
+<h4>Editing Pages<a class="headerlink" href="#editing-pages" title="Permalink to this headline">#</a></h4>
+<p>As demonstrated above, the pages are contained in the ‘docs’ folder. There are various types of content that can included on each page.</p>
+<section id="general-text">
+<h5>General Text<a class="headerlink" href="#general-text" title="Permalink to this headline">#</a></h5>
+<p>Text generally, unlike in HTML, does not require any special tags for the programming language markdown.</p>
+</section>
+<section id="headings">
+<h5>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">#</a></h5>
+<p>Headings are annotated using the ‘#’ symbol. The less ‘#’ symbols used, the higher the hierarchy of heading. For example, the heading for the entire page would typically use ‘#’, however any subheading after that would require at the very minimum ‘##’.</p>
+<p>For any subsection as part of the ‘##’ subsection, they would require an additional symbol, which would result in ‘###’, and so on and so on.</p>
+</section>
+<section id="hyperlinks">
+<h5>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">#</a></h5>
+<p>Hyperlinks are simple to implement, as they involve square brackets around the word desired to be clickable, and parentheses containing the link. The code below demonstrates this.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">The</span> <span class="n">Github</span> <span class="n">repo</span> <span class="n">can</span> <span class="n">be</span> <span class="n">found</span> <span class="p">[</span><span class="n">here</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nencarc</span><span class="o">-</span><span class="n">digital</span><span class="o">/</span><span class="n">template</span><span class="p">)</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="figures">
+<h5>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">#</a></h5>
+<p>Figures are also simple to implement. All is required is the static link to the image and the scale of the image according to the page. The code below is an example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} /_static/lecture_specific/index/screenshot38.png
+:scale: 35%
+```
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="code-cell">
+<h5>Code Cell<a class="headerlink" href="#code-cell" title="Permalink to this headline">#</a></h5>
+<p>To add a code cell to the page, the following command can be used.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell} ipython3
+This is example code.
+```
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="editing-navigation-bar">
+<h5>Editing Navigation Bar<a class="headerlink" href="#editing-navigation-bar" title="Permalink to this headline">#</a></h5>
+<p>As shown previously, the ‘_toc.yml’ file contains the details of the navigation bar.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/screenshot39.png"><img alt="../_images/screenshot39.png" src="../_images/screenshot39.png" style="width: 216.9px; height: 310.5px;" /></a>
+</figure>
+<p>The ‘caption’ is the name of the book, the ‘files’ are the pages as part of that ‘chapter’. These can be edited as you wish. However, to update the contents for the live page, the command below is required before the build command.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jb</span> <span class="n">clean</span> <span class="n">book</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="general-troubleshooting">
+<h3>General Troubleshooting<a class="headerlink" href="#general-troubleshooting" title="Permalink to this headline">#</a></h3>
+<p>To change which Github repository you want to work with, the following command can be used. The command below uses an example Github link, use the same link that was used during the cloning repository process.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="nb">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">repo</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="chapter1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 1</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Conor Wall<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

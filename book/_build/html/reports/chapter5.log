@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/opt/homebrew/lib/python3.10/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/opt/homebrew/lib/python3.10/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/opt/homebrew/lib/python3.10/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "/opt/homebrew/lib/python3.10/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/opt/homebrew/lib/python3.10/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/homebrew/lib/python3.10/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Define the outcome
+ydef <- defDataAdd(varname = "Y", dist = "normal", 
+                   formula = "5 + 2.5*period + 1.5*T + 3.5*period*T", 
+                   variance = 3)
+
+# Generate a 'blank' data.table with 24 observations and assign them to groups
+set.seed(1234)
+indData <- genData(24)
+indData <- trtAssign(indData, nTrt = 2, balanced = TRUE, grpName = "T")
+
+# Create a longitudinal data set of 3 records for each id
+longData <- addPeriods(indData, nPeriods = 3, idvars = "id")
+longData <- addColumns(dtDefs = ydef, longData)
+longData[, `:=`(T, factor(T, labels = c("No", "Yes")))]
+
+# Let's look at the data
+ggplot(data = longData, aes(x = factor(period), y = Y)) + geom_line(aes(color = T, 
+    group = id)) + scale_color_manual(values = c("#e38e17", "#8e17e3")) + xlab("Time")
+------------------
+
+[0;36m  Cell [0;32mIn [2], line 13[0;36m[0m
+[0;31m    longData <- addColumns(dtDefs = ydef, longData)[0m
+[0m                                                  ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m positional argument follows keyword argument
+
+SyntaxError: positional argument follows keyword argument (136111791.py, line 13)
+

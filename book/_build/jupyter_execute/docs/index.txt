@@ -1,0 +1,53 @@
+conda install -c anaconda git
+
+conda install -c conda-forge ghp-import
+
+pip install jupyter-book
+
+conda install -c conda-forge nodejs
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install git.
+
+pip install ghp-import
+
+pip install jupyterlab
+
+git config --global user.name nencarc-digital
+
+git config --global user.email nencarc.digital@gmail.com
+
+git clone https://github.com/nencarc-digital/reponame.git
+
+cd reponame
+
+git add --all
+
+git commit -m 'initial commit'
+
+git config --global http.sslVerify false
+
+git push -u origin main 
+
+git push -f
+
+jb build book/  
+
+file:///Users/conorwall/reponame/book/_build/html/index.html
+
+ghp-import -n -p -f book/_build/html 
+
+The Github repo can be found [here](https://github.com/nencarc-digital/template).
+
+```{figure} /_static/lecture_specific/index/screenshot38.png
+:scale: 35%
+```
+
+```{code-cell} ipython3
+This is example code.
+```
+
+jb clean book/
+
+git remote set-url origin https://github.com/user/repo.git

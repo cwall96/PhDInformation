@@ -1,0 +1,18 @@
+format: jb-book
+root: docs/index
+parts:
+- caption: Example Book 1
+  chapters:
+  - file: docs/chapter1
+  - file: docs/chapter2
+  - file: docs/chapter3
+- caption: Example Book 2
+  chapters:
+  - file: docs/chapter4
+  - file: docs/chapter5
+  - file: docs/chapter6
+- caption: Example Book 3
+  chapters:
+  - file: docs/chapter7
+  - file: docs/chapter8
+  - file: docs/chapter9
