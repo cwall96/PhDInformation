@@ -4,8 +4,10 @@
 # # Conor Wall - Contact Information 
 # 
 # Email: conor.p.a.wall@northumbria.ac.uk \
+# Department: Computer and Information Sciences \ 
 # Office: ELB111 \
-# Supervisors: Dr Alan Godfrey, Professor Richard Walker, Professor Peter McMeekin \
+# Principal Supervisor: Dr Alan Godfrey, Dept. of Computer & Information Sciences \
+# Secondary Supervisors: Professor Richard Walker, Northumbria Healthcare NHS Trust | Professor Peter McMeekin, Dept. Nursing and Midwifery \
 # Digi Health Research Group: [Link](https://digihealthgroup.org/#) \
 # Google Scholar: [Link](https://scholar.google.com/citations?user=4zQAbnsAAAAJ&hl=en&oi=ao) \
 # Twitter: [Link](https://www.twitter.com/ConorWall96) 
