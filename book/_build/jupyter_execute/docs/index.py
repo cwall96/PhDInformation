@@ -8,13 +8,11 @@
 # Supervisors: Dr Alan Godfrey, Professor Richard Walker, Professor Peter McMeekin \
 # Digi Health Research Group: [Link](https://digihealthgroup.org/#) \
 # Google Scholar: [Link](https://scholar.google.com/citations?user=4zQAbnsAAAAJ&hl=en&oi=ao) \
-# Twitter: [Link](https://www.twitter.com/ConorWall96) \
+# Twitter: [Link](https://www.twitter.com/ConorWall96) 
 # 
-# # Poster Information
+# # Poster Download Link and References
 # 
-# Click on this [link](www.google.com) to download poster. 
-# 
-# ## References 
+# Click on this [link](https://github.com/cwall96/PhDInformation/tree/main/book/pgrposter.pdf) to download poster. 
 # 
 # 1. Triarhou, L.C., 2013. Dopamine and Parkinson's disease. In Madame Curie Bioscience Database [Internet]. Landes Bioscience.
 # 2. Bryant, M.S., Rintala, D.H., Hou, J.G., Charness, A.L., Fernandez, A.L., Collins, R.L., Baker, J., Lai, E.C. and Protas, E.J., 2011. Gait    variability in Parkinson’s disease: influence of walking speed and dopaminergic treatment. Neurological research, 33(9), pp.959-964.
